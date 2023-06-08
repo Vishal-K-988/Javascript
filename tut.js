@@ -54,4 +54,35 @@ console.log(person45)
 const person55 = {...person45, name1 :"Hello ewr"}
 console.log(person55)
 
-// 4. 
+// 4. Asyn Await -- 
+// Calling Api 
+// Method -1 
+
+const axios = require("axios")
+const data = axios.get('https://api.publicapis.org/entries')
+
+data.then( (res) => {
+    console.log(res)
+} ).catch ( (err)=> {
+    console.log(err)
+} ).finally( () => {
+    console.log("Api fetching done")
+})
+
+
+
+// Method -2 
+
+const fetching = async () => {
+    try{
+    const data = await axios.get('https://catfact.ninja/fact')
+    console.log(data)
+    } catch (err) {
+        console.log(err)
+    }finally{
+        console.log(" Api Fetching done! ")
+    }
+}
+
+// calling 
+fetching();
