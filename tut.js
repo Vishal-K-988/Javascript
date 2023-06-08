@@ -1,3 +1,6 @@
+// Basic javascript for React.js
+
+
 // 1. Simple Function 
 function hello()  {
     console.log("Hello")

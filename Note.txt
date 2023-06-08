@@ -12,3 +12,25 @@ Then you can use the require() function to use/include this module within your J
 const getFullName = require('./utils.js');
 console.log(getFullName('John', 'Doe')); // My fullname is John Doe
 The module is located within a local file in the above code, which is why the local address is referenced using the file name.
+
+------------------
+
+Use of Let & Const as compared to Var:
+ 1. Hosting 
+ 2. Re-declaration 
+ 3. Functional Scope
+
+#Default parameter 
+    const print = (a="Manish") => a + "hello"
+    console.log(print())
+
+    Output: Manishhello (defaultly accepting the parameters without passing any parameter)
+
+# rest parameter => ...
+# spread parameter ...
+# Object destructuring 
+# Array Methods :
+    1. ForEach 
+    2. map => returns a newly created an array 
+    3. find
+    4. 
