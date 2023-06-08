@@ -1,0 +1,14 @@
+
+Suppose you have a CommonJS module that exports a function *getFullName* as seen below:
+
+// utils.js
+const getFullName = (firstname, lastName) => {
+    return `My fullname is ${firstname} ${lastName}`;
+};
+module.exports = getFullName;
+Then you can use the require() function to use/include this module within your JavaScript file:
+
+// index.js
+const getFullName = require('./utils.js');
+console.log(getFullName('John', 'Doe')); // My fullname is John Doe
+The module is located within a local file in the above code, which is why the local address is referenced using the file name.
